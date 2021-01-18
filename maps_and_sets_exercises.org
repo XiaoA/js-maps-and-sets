@@ -27,3 +27,19 @@ What does the following code return?
 
 #+RESULTS:
 : ref
+
+** Quick Questions #3
+What does the Map m look like after running the following code?
+
+#+begin_src js :tangle question3.js
+  let m = new Map();
+  m.set([1, 2, 3], true);
+  m.set([1, 2, 3], false);
+
+  return m;
+
+  // Map(2) { [ 1, 2, 3 ] => true, [ 1, 2, 3 ] => false }
+#+end_src
+
+#+RESULTS:
+: Map(2) { [ 1, 2, 3 ] => true, [ 1, 2, 3 ] => false }
