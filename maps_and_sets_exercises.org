@@ -66,3 +66,26 @@ Write a function called hasDuplicate which accepts an array and returns true or 
 #+begin_src js
   const hasDuplicate = array => new Set(array).size !== array.length
 #+end_src
+
+** hasDuplicate
+Write a function called hasDuplicate which accepts an array and returns true or false if that array contains a duplicate
+
+#+begin_src js :tangle has_duplicate.js
+  function hasDuplicate(array) {
+    const duplicateSet = new Set(array);
+    if (array.length !== duplicateSet.size) {
+      return true;
+    } else {
+      return false;
+    }
+  };
+
+  hasDuplicate([1, 3, 2, 1]) // true
+  hasDuplicate([1, 5, -1, 4]) // false
+#+end_src
+
+*** Or, using a function expression/arrow function:
+
+#+begin_src js
+  const hasDuplicate = array => new Set(array).size !== array.length
+#+end_src
