@@ -15,3 +15,15 @@ What does the following code return?
 
 #+RESULTS:
 : Set(4) { 1, 2, 3, 4 }
+
+** Quick Question #2 
+What does the following code return?
+
+#+begin_src js :tangle question2.js
+  return [...new Set("referee")].join ("")
+
+  // ref
+#+end_src
+
+#+RESULTS:
+: ref
