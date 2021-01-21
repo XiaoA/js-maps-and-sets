@@ -1,0 +1,17 @@
+#+Title: JS Maps and Sets Exercises
+#+AUTHOR: Andrew Buckingham
+#+STARTUP: indent
+#+OPTIONS: num:nil toc:nil ^:nil
+#+FILETAGS: :springboard:
+
+** Quick Question #1 
+What does the following code return?
+
+#+begin_src js :tangle question1.js
+  new Set([1, 1, 2, 2, 3, 4])
+
+  // Set(4) { 1, 2, 3, 4 }
+#+end_src
+
+#+RESULTS:
+: Set(4) { 1, 2, 3, 4 }
